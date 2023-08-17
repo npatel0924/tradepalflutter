@@ -1,80 +1,60 @@
-Stock Price App
-===============
+Trade Pal - Stock Price Analysis App
+====================================
 
-This is a Flutter app that allows users to fetch and analyze stock prices using the Alpha Vantage API. Users can input a stock ticker symbol, and the app will display the stock's current price, volume, and change details.
+Trade Pal is a mobile application developed using the Flutter framework that allows users to analyze stock prices and make informed trading decisions. The app fetches real-time stock price data using the Alpha Vantage API and presents various metrics related to the stock's performance, including price changes, volume, 52-week range, PEG ratio, and analyst target price. Based on these metrics, the app provides a verdict on whether to buy, hold, wait, or sell the stock.
 
-Prerequisites
--------------
+Features
+--------
 
-Before you begin, ensure you have met the following requirements:
-
--   You have Flutter and Dart installed on your development machine.
--   You have a valid API key from Alpha Vantage to access their API.
+-   Real-time Stock Price Analysis: Fetches live stock price data from the Alpha Vantage API to provide accurate and up-to-date information.
+-   Comprehensive Data Display: Displays essential stock metrics, including stock price, volume, change point, change percentage, 52-week range, PEG ratio, mean target price, and trading verdict.
+-   Verdict Generation: Analyzes the collected data and generates a trading verdict (BUY, HOLD, WAIT, or SELL) based on predetermined conditions and stock performance indicators.
+-   User-friendly Interface: Offers a simple and intuitive user interface with input fields for entering stock ticker symbols and a button to trigger the analysis.
 
 Getting Started
 ---------------
 
-To run this app locally, follow these steps:
+To get started with Trade Pal, follow these steps:
 
-1.  Clone this repository to your local machine:
+1.  Clone the Repository: Clone this repository to your local machine.
 
-    bashCopy code
-
-    `git clone https://github.com/your-username/stock-price-app.git`
-
-2.  Navigate to the project directory:
-
-    bashCopy code
-
-    `cd stock-price-app`
-
-3.  Install the required dependencies:
+2.  Install Dependencies: Open the project in your preferred IDE (e.g., Visual Studio Code) and ensure you have Flutter and Dart installed. Run the following command to install project dependencies:
 
     arduinoCopy code
 
     `flutter pub get`
 
-4.  Open the `lib/main.dart` file and replace `'YOUR_API_KEY'` with your actual Alpha Vantage API key.
+3.  Alpha Vantage API Key: Obtain an API key from [Alpha Vantage](https://www.alphavantage.co/) to fetch stock price and overview data. Replace `'U3S5ZT27QDIJ3DUE'` with your actual API key in the `apiKey` variable within the `_fetchStockPrice` function in the `_MyHomePageState` class.
 
-5.  Run the app:
+4.  Run the App: Connect your device/emulator and run the app using the following command:
 
     arduinoCopy code
 
     `flutter run`
 
-The app should launch on your connected device or emulator.
+Usage
+-----
 
-Features
---------
+1.  Open the app on your device/emulator.
 
--   Input a stock ticker symbol.
--   Fetch the current stock price, volume, change point, and change percentage using the Alpha Vantage API.
--   Display the fetched data to the user.
+2.  Enter the stock ticker symbol in the provided text field.
 
-Dependencies
-------------
+3.  Click the "Analyze" button to fetch and analyze the stock data.
 
-This app uses the following dependencies:
-
--   `flutter/material.dart`: The Flutter framework for building user interfaces.
--   `http`: A package for making HTTP requests.
--   `dart:convert`: A package for encoding and decoding JSON data.
-
-App Structure
--------------
-
-The app's main components are:
-
--   `main.dart`: The entry point of the app. It initializes the Flutter app and runs the `MyApp` widget.
--   `MyApp`: The root widget of the app. It sets the theme and displays the `MyHomePage` widget.
--   `MyHomePage`: The main screen of the app. It contains the UI elements for inputting a stock ticker symbol, fetching stock data, and displaying the results.
+4.  The app will display the stock price, volume, change point, change percentage, 52-week range, PEG ratio, mean target price, and the trading verdict (BUY, HOLD, WAIT, or SELL) based on the calculated indicators.
 
 Contributing
 ------------
 
-Contributions are welcome! If you find any issues or would like to enhance the app, feel free to submit a pull request.
+Contributions to Trade Pal are welcome! If you find any bugs, want to add new features, or improve existing ones, feel free to submit pull requests.
 
 License
 -------
 
-This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/LICENSE) file for details.
+This project is licensed under the [MIT License](https://chat.openai.com/LICENSE).
+
+Acknowledgments
+---------------
+
+-   The app utilizes the [Alpha Vantage API](https://www.alphavantage.co/) to fetch stock price and overview data.
+- The information contained on this app and the resources available for download through this app is not intended as, and shall not be understood or construed as, financial advice. I am not an attorney, accountant or financial advisor, nor am I holding myself out to be, and the information contained on this Website is not a substitute for financial advice from a professional who is aware of the facts and circumstances of your individual situation. 
