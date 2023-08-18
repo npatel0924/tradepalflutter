@@ -93,25 +93,25 @@ class _MyHomePageState extends State<MyHomePage> {
     pctabovelow = ((douleprice - low)/low)*100;
     pctbelowmean = ((mean - douleprice)/mean)*100;
 
-    if (doublepeg <= 1 && pctbelowmean >= 66 && pctabovelow <= 33){
+    if (doublepeg <= 1 && pctbelowmean >= 33 && pctabovelow <= 50){
       _verdict = 'BUY';
     }
-    else if (!(doublepeg <= 1) && pctbelowmean >= 66 && pctabovelow <= 33){
+    else if (!(doublepeg <= 1) && pctbelowmean >= 33 && pctabovelow <= 50){
       _verdict = 'HOLD';
     }
-    else if (doublepeg <= 1 && !(pctbelowmean >= 66) && pctabovelow <= 33){
+    else if (doublepeg <= 1 && !(pctbelowmean >= 33) && pctabovelow <= 50){
       _verdict = 'HOLD';
     }
-    else if (doublepeg <= 1 && pctbelowmean >= 66 && !(pctabovelow <= 33)){
+    else if (doublepeg <= 1 && pctbelowmean >= 33 && !(pctabovelow <= 50)){
       _verdict = 'HOLD';
     }
-    else if (!(doublepeg <= 1) && !(pctbelowmean >= 66) && pctabovelow <= 33){
+    else if (!(doublepeg <= 1) && !(pctbelowmean >= 33) && pctabovelow <= 50){
       _verdict = 'WAIT';
     }
-    else if (!(doublepeg <= 1) && pctbelowmean >= 66 && !(pctabovelow <= 33)){
+    else if (!(doublepeg <= 1) && pctbelowmean >= 33 && !(pctabovelow <= 50)){
       _verdict = 'WAIT';
     }
-    else if (doublepeg <= 1 && !(pctbelowmean >= 66) && !(pctabovelow <= 33)){
+    else if (doublepeg <= 1 && !(pctbelowmean >= 33) && !(pctabovelow <= 50)){
       _verdict = 'WAIT';
     }
     else {
