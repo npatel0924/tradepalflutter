@@ -182,6 +182,11 @@ class _MyHomePageState extends State<MyHomePage> {
           'Verdict: $_verdict',
           style: const TextStyle(fontSize: 18),
         ),
+        const SizedBox(height: 19),
+        const Text(
+          'NOT FINANCIAL ADVICE. SCHOOL PROJECT ONLY',
+          style: TextStyle(fontSize: 5),
+        ),
           ],
         ),
       ),
